@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--
+  abiolvera.com — single-file landing page.
+
+  SIX-MONTH REVIEW CHECKLIST (next: March 2027)
+  [ ] Intro + "Boards": roles still current?
+  [ ] "Start here": still your three strongest pieces? Check https://abio.substack.com/archive?sort=top
+  [ ] "More writing": swap in anything that now outperforms what's listed; keep each group to 2–4
+  [ ] Update the "Last revised" date in the footer
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abi Olvera</title>
+<meta name="description" content="Abi Olvera writes Positive Sum, on why things cost so much, why institutions make mistakes, and what AI is actually changing. She runs DC Abundance and is a former U.S. diplomat.">
+<meta property="og:title" content="Abi Olvera">
+<meta property="og:description" content="Writer, founder of DC Abundance, and former U.S. diplomat.">
+<meta property="og:url" content="https://abiolvera.com/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf8f3;
+    --ink: #1f1e1b;
+    --muted: #6b675e;
+    --rule: #e4dfd3;
+    --accent: #7a2e1f;
+    --accent-hover: #a33d28;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --ink: #e9e5db;
+      --muted: #9d978a;
+      --rule: #2f2c27;
+      --accent: #e0957f;
+      --accent-hover: #f0b39f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1.1875rem;
+    line-height: 1.65;
+    font-optical-sizing: auto;
+    text-rendering: optimizeLegibility;
+    padding-inline: 1.25rem;
+  }
+  main, footer { max-width: 36rem; margin: 0 auto; }
+  main { padding-block: 5.5rem 1rem; }
+
+  a { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em; text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent); }
+  a:hover { color: var(--accent-hover); text-decoration-color: currentColor; }
+
+  h1 { font-size: 2.125rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.15; margin: 0 0 1.5rem; }
+  .lede { font-size: 1.3125rem; line-height: 1.55; margin: 0 0 1rem; }
+
+  section { margin-top: 3.5rem; }
+  h2 {
+    font-family: var(--sans); font-size: 0.75rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted);
+    margin: 0 0 1.1rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+
+  .featured { list-style: none; padding: 0; margin: 0; }
+  .featured li { margin-bottom: 1.5rem; }
+  .featured li:last-child { margin-bottom: 0; }
+  .featured a { font-size: 1.25rem; line-height: 1.35; }
+  .featured .why { display: block; margin-top: 0.3rem; color: var(--muted); font-size: 1.0625rem; line-height: 1.5; }
+
+  .group { font-style: italic; color: var(--muted); font-size: 1rem; margin: 1.75rem 0 0.5rem; }
+  .group:first-of-type { margin-top: 0; }
+  .writing { list-style: none; padding: 0; margin: 0; }
+  .writing li { margin-bottom: 0.45rem; line-height: 1.45; }
+  .src { font-family: var(--sans); font-size: 0.75rem; color: var(--muted); letter-spacing: 0.02em; margin-left: 0.35rem; white-space: nowrap; }
+
+  .contact-primary {
+    display: inline-block; margin: 0.25rem 0 1.25rem; padding: 0.65rem 1.05rem;
+    font-family: var(--sans); font-size: 0.9375rem; font-weight: 600;
+    color: var(--bg); background: var(--ink); text-decoration: none; border-radius: 3px;
+  }
+  .contact-primary:hover { color: var(--bg); background: var(--accent); }
+  .links { font-family: var(--sans); font-size: 0.875rem; }
+  .links a { margin-right: 1.1rem; }
+
+  footer { padding-block: 2.5rem 3.5rem; font-family: var(--sans); font-size: 0.75rem; color: var(--muted); border-top: 1px solid var(--rule); margin-top: 3.5rem; }
+
+  @media (max-width: 480px) {
+    body { font-size: 1.0625rem; }
+    main { padding-block: 3rem 1rem; }
+    h1 { font-size: 1.875rem; }
+    .lede { font-size: 1.1875rem; }
+    .featured a { font-size: 1.125rem; }
+    section { margin-top: 3rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Abi Olvera</h1>
+
+  <p class="lede">I write <a href="https://abio.substack.com/"><em>Positive Sum</em></a>, a newsletter about why things cost so much, why institutions make mistakes, and what AI is actually changing.</p>
+  <p class="lede">I also run <a href="https://dcabundance.org/">DC Abundance</a>, a community exploring why it&rsquo;s so hard to build housing, energy, and infrastructure in America.</p>
+  <p class="lede">Before this, I spent more than a decade as a U.S. diplomat.</p>
+
+  <section id="background">
+    <h2>Background</h2>
+    <p>I work as a generalist. My writing has appeared in <a href="https://asteriskmag.com/contributors"><em>Asterisk</em></a>, the <a href="https://thebulletin.org/biography/abi-olvera/"><em>Bulletin of the Atomic Scientists</em></a>, where I was an editorial fellow, and the Golden Gate Institute for AI. I also wrote <a href="https://www.amazon.com/dp/B0CL2VVFZY/"><em>The Underdog&rsquo;s Guide to Scholarships</em></a>, a book for low-income students, and gave a <a href="https://www.youtube.com/watch?v=zK7QgwETJ1s">TEDx talk on traffic deaths</a>.</p>
+    <p>Some of my writing is about class and cultural capital. Richer and poorer Americans mostly live in separate social worlds, which makes it easy for policy to miss the people at the bottom.</p>
+    <p>I started at community college and went on to the University of Richmond and Yale. At the State Department, including postings in <a href="https://abio.substack.com/p/i-was-a-diplomat-where-being-gay">Senegal and Egypt</a>, I worked on national security, biosecurity, emerging technology, and China, as well as macroeconomics, poverty, and crisis preparedness.</p>
+  </section>
+
+  <section id="start">
+    <h2>Start here</h2>
+    <ul class="featured">
+      <li><a href="https://abio.substack.com/p/a-blocked-gmo-rice-could-have-saved">A blocked GMO rice could have saved 100,000 children</a>
+        <span class="why">A fix for childhood vitamin A deficiency has existed since the mid-2000s. I estimated what two decades of blocking it has cost.</span></li>
+      <li><a href="https://abio.substack.com/p/how-working-class-people-talk-about">How working-class people talk about Uber is not how the media covers it</a>
+        <span class="why">Why the debate about gig work looks different from inside the communities that do it.</span></li>
+      <li><a href="https://abio.substack.com/p/why-ai-assisted-bioweapons-wont-kill">Why AI-assisted bioweapons won&rsquo;t kill us all</a>
+        <span class="why">AI can help plan an attack. Building a weapon still depends on hands-on skill that&rsquo;s hard to transfer.</span></li>
+    </ul>
+  </section>
+
+  <section id="writing">
+    <h2>More writing</h2>
+
+    <p class="group">Institutions and everyday costs</p>
+    <ul class="writing">
+      <li><a href="https://abio.substack.com/p/the-abundance-playbook-how-to-cut">An abundance playbook for daycare, healthcare, and housing</a></li>
+      <li><a href="https://abio.substack.com/p/11-fixable-things-that-make-life">11 fixable things that make life harder for the elderly, the sick, and the poor</a></li>
+      <li><a href="https://abio.substack.com/p/america-could-have-4-lunch-bowls">America could have $4 lunch bowls like Japan</a></li>
+      <li><a href="https://asteriskmag.com/issues/10/traffic-fatalities-are-a-choice">Traffic fatalities are a choice</a><span class="src">Asterisk</span></li>
+    </ul>
+
+    <p class="group">How institutions form their views</p>
+    <ul class="writing">
+      <li><a href="https://asteriskmag.com/issues/15/how-diplomats-see-the-world">How diplomats see the world</a><span class="src">Asterisk</span></li>
+      <li><a href="https://abio.substack.com/p/what-deep-state-looks-like-from-the">What &ldquo;deep state&rdquo; looks like from the inside</a></li>
+      <li><a href="https://abio.substack.com/p/the-misinformation-i-fell-for">The misinformation I fell for</a></li>
+    </ul>
+
+    <p class="group">How social classes misread each other</p>
+    <ul class="writing">
+      <li><a href="https://abio.substack.com/p/low-wage-work-is-a-system-coverage">Low-wage work is a whole world with its own logic and norms</a></li>
+      <li><a href="https://abio.substack.com/p/cars-often-keep-people-poor-waymo">Cars often keep people poor. Waymo could help.</a></li>
+    </ul>
+
+    <p class="group">AI, with nuance</p>
+    <ul class="writing">
+      <li><a href="https://secondthoughts.ai/p/why-arent-bioweapons-common">To forecast AI&rsquo;s impact on biosecurity, ask why attacks are so rare</a><span class="src">Golden Gate Institute for AI</span></li>
+      <li><a href="https://secondthoughts.ai/p/tacit-knowledge-the-missing-factor">Tacit knowledge: the missing factor in AI bio risk assessments</a><span class="src">Golden Gate Institute for AI</span></li>
+      <li><a href="https://secondthoughts.ai/p/ai-can-help-plan-a-bioweapon-building">AI can help plan a bioweapon. Building one is still hard.</a><span class="src">Golden Gate Institute for AI</span></li>
+    </ul>
+
+    <p style="margin-top:1.5rem"><a href="https://abio.substack.com/archive?sort=top">Everything on Positive Sum &rarr;</a></p>
+  </section>
+
+  <section id="boards">
+    <h2>Boards</h2>
+    <p><a href="https://www.iaps.ai/">IAPS</a>, <a href="https://rethinkpriorities.org/">Rethink Priorities</a>, <a href="https://www.matsprogram.org/">MATS</a>, and <a href="https://www.sparrowdc.org/">Sparrow Infrastructure</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>The best way to follow my work is on <em>Positive Sum</em>.</p>
+    <a class="contact-primary" href="https://abio.substack.com/subscribe">Subscribe to Positive Sum</a>
+    <p class="links">
+      <a href="https://www.linkedin.com/in/abiolvera/">LinkedIn</a>
+      <a href="https://x.com/abi0lvera">X</a>
+      <a href="mailto:abi@aya.yale.edu">Email</a>
+    </p>
+  </section>
+
+</main>
+<footer>
+  Last revised September 2026
+</footer>
+</body>
+</html>
